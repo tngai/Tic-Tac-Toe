@@ -1,0 +1,58 @@
+html, body, .board, #infoBanner {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-image: url('images/backimage.jpg');
+	background-size:100% auto;
+	border: 10px black;
+}
+
+.board {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background-color:grey;
+	width: 600px;
+	height: 600px;
+	transform: translate(-50%, -50%);
+	box-shadow: inset 0 0 30px grey;
+	border: 5px inset black;
+}
+
+#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9 {
+	padding: 0;
+	display: inline-block;
+	height:30%;
+	width:30%;
+	border: 5px solid black;
+	margin-top: 1%;
+	margin-left: 1%;
+	background-color: white;
+	
+}
+#box1 {
+	background: url("images/xoSprite.png") -180px 0px;
+	
+}
+#box2 {
+	background: url("images/xoSprite.png") center bottom;
+
+}
+#infoBanner {
+	position: absolute;
+	left: 45%;
+	top: 85%;
+	padding: 10px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
