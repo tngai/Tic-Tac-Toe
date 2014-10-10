@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="style.css">
-		<script src="main.js"> 
-		</script>   
+		<link rel="stylesheet" href="style.css"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+  		<script src="main.js"></script>
+  		 
 	
 	</head>
-	<body>
-		<div class="board">
-			<div id="box1" onclick="boxSelect = 1">x</div>
-			<div id="box2" onclick="boxSelect = 2">x</div>
-			<div id="box3" onclick="boxSelect = 4">x</div>
-			<div id="box4" onclick="boxSelect = 5">x</div>
-			<div id="box5" onclick="boxSelect = 6">x</div>
-			<div id="box6" onclick="boxSelect = 7">x</div>
-			<div id="box7" onclick="boxSelect = 8">x</div>
-			<div id="box8" onclick="boxSelect = 9">x</div>
-			<div id="box9" onclick="boxSelect = 10">x</div>
+	<body ng-app="tttApp">
+		<div class="board" ng-controller="TttController">
+			<div id="box1"  ng-class=mark ng-click="boxSelect(1)" >x</div>
+			<div id="box2" ng-click="boxSelect(2)">x</div>
+			<div id="box3" ng-click="boxSelect(3)">x</div>
+			<div id="box4" ng-click="boxSelect(4)">x</div>
+			<div id="box5" ng-click="boxSelect(5)">x</div>
+			<div id="box6" ng-click="boxSelect(6)">x</div>
+			<div id="box7" ng-click="boxSelect(7)">x</div>
+			<div id="box8" ng-click="boxSelect(8)">x</div>
+			<div id="box9" ng-click="boxSelect(9)">x</div>
 		</div>
-		<button id="infoBanner" onclick="runGame()">Click to Start</button>	
 	</body>
 </html>
 

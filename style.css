@@ -31,19 +31,25 @@ body {
 	background-color: white;
 	
 }
-#box1 {
+ .x1 {
 	background: url("images/xoSprite.png") -180px 0px;
 	
 }
-#box2 {
+  #box0 {
 	background: url("images/xoSprite.png") center bottom;
 
 }
+
 #infoBanner {
 	position: absolute;
 	left: 45%;
 	top: 85%;
 	padding: 10px 30px;
+}
+
+.moveX {
+	background-image: url("images/xoSprite.png") -180px 0px;
+	z-index: 1
 }
 
 
