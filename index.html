@@ -6,18 +6,10 @@
   		<script src="main.js"></script>
   		 
 	
-	</head>
+	</head> 
 	<body ng-app="tttApp">
 		<div class="board" ng-controller="TttController">
-			<div id="box1"  ng-class=mark ng-click="boxSelect(1)" >x</div>
-			<div id="box2" ng-click="boxSelect(2)">x</div>
-			<div id="box3" ng-click="boxSelect(3)">x</div>
-			<div id="box4" ng-click="boxSelect(4)">x</div>
-			<div id="box5" ng-click="boxSelect(5)">x</div>
-			<div id="box6" ng-click="boxSelect(6)">x</div>
-			<div id="box7" ng-click="boxSelect(7)">x</div>
-			<div id="box8" ng-click="boxSelect(8)">x</div>
-			<div id="box9" ng-click="boxSelect(9)">x</div>
+			<div class="box" ng-repeat="cell in board"  ng-click="boxSelect(cell)">board Status {{cell}}</div>
 		</div>
 	</body>
 </html>
